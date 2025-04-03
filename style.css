@@ -1,0 +1,143 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(40, 40, 40);
+  color: #fff;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  position: sticky;
+}
+.header .logo {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.header .logo:hover {
+  transform: scale(1.1);
+}
+.header .navbar {
+  display: flex;
+  gap: 3rem;
+}
+.header .navbar a {
+  color: white;
+  font-weight: 900;
+  padding: 5px 10px; /* Tambahkan padding dari awal */
+  box-sizing: border-box; /* Pastikan ukuran elemen tetap */
+  border-radius: 5px 8px; /* Tambahkan border-radius dari awal */
+  transition: all 0.5s ease; /* Pindahkan transition ke sini */
+}
+
+.header .navbar a:hover {
+  color: black;
+  background-color: #b07d62;
+}
+
+/* HERO SECTION */
+.hero {
+  width: 100%;
+  height: 100vh;
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.wrapper img {
+  width: 100%;
+  height: 85%;
+  object-fit: cover;
+}
+.title,
+.wrapper p,
+.wrapper button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+}
+.title {
+  top: 30%;
+  width: 80%;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.wrapper p {
+  top: 50%;
+  width: 70%;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+.wrapper button {
+  top: 65%;
+  background-color: #b07d62;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.wrapper button:hover {
+  background-color: #664343;
+}
+
+/* Menu */
+.menu {
+  margin-top: 3rem;
+}
+.menu h1 {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 40px;
+}
+.menu h1 span {
+  color: #b07d62;
+}
+.kotak-menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+.menu-dalam img {
+  border-radius: 10px;
+  box-shadow: 0 0 50px #664343;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.menu-dalam {
+  transition: all 0.6s ease;
+  margin-top: 1rem;
+}
+.menu-dalam:hover {
+  transform: scale(1.05);
+}
+.menu-dalam .nama-menu-harga {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
